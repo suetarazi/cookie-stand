@@ -25,7 +25,7 @@ var seattle = {
             var avg = getRandomArbitrary(this.minCust, this.maxCust);
 
             // cookiesPerHour[i]= avg*this.avgCookiesPerSale;
-            this.cookiesPerHour.push(avg*this.avgCookiesPerSale);
+            this.cookiesPerHour.push(Math.floor(avg*this.avgCookiesPerSale));
             //console.log(this.cookiesPerHour);
         }
     },
@@ -85,7 +85,7 @@ var tokyo = {
     avgSalesPerHour: function (){
         for (var i=0; i<hours.length; i++){
             var avg = getRandomArbitrary(this.minCust, this.maxCust);
-            this.cookiesPerHour.push(avg*this.avgCookiesPerSale);
+            this.cookiesPerHour.push(Math.floor(avg*this.avgCookiesPerSale));
         }
     },
 
@@ -133,7 +133,7 @@ var dubai = {
     avgSalesPerHour: function (){
         for (var i=0; i<hours.length; i++){
             var avg = getRandomArbitrary(this.minCust, this.maxCust);
-            this.cookiesPerHour.push(avg*this.avgCookiesPerSale);
+            this.cookiesPerHour.push(Math.floor(avg*this.avgCookiesPerSale));
         }
     },
 
@@ -183,7 +183,7 @@ var paris = {
     avgSalesPerHour: function (){
         for (var i=0; i<hours.length; i++){
             var avg = getRandomArbitrary(this.minCust, this.maxCust);
-            this.cookiesPerHour.push(avg*this.avgCookiesPerSale);
+            this.cookiesPerHour.push(Math.floor(avg*this.avgCookiesPerSale));
         }
     },
 
@@ -232,7 +232,7 @@ var lima = {
     avgSalesPerHour: function (){
         for (var i=0; i<hours.length; i++){
             var avg = getRandomArbitrary(this.minCust, this.maxCust);
-            this.cookiesPerHour.push(avg*this.avgCookiesPerSale);
+            this.cookiesPerHour.push(Math.floor(avg*this.avgCookiesPerSale));
         }
     },
 
