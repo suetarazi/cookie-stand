@@ -1,0 +1,46 @@
+
+
+
+body{
+    background-color: #D9B97E;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #B4B4B4; */
+}
+
+h1{
+    color: #A64732;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+h2{
+    color: #403A2F;
+    text-align: center;
+    font-size: 16pt;
+}
+.salmon{
+    display: block;
+    /* text-align: center; */
+    width: 500px;
+    margin: 0 auto;
+}
+
+#mainContent{
+    color: #F2F2F2;
+    width: 80%;
+    margin: auto;
+    padding: 50px; 
+    
+}
+
+li{
+    color: #424242;
+    font-size: 20px;
+}
+
+.travel{
+    color: #424242;
+    font-size: 20 px;
+}        
+    
