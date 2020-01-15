@@ -30,6 +30,11 @@ Store.prototype.avgSalesPerHour = function () {
         headerEmptySpace.textContent = '';
         headerRow.appendChild(headerEmptySpace);
 
+        // !!!Did not get this portion of the code to work 
+        var totalByDay = document.createElement('th');
+        totalByDay.textContent=(' Total ');
+        headerRow.appendChild(totalByDay);
+
         console.log('hello');
         var avg = getRandomArbitrary(this.minCust, this.maxCust);
         console.log(avg);
@@ -46,7 +51,7 @@ Store.prototype.totalSalesPerDay = function () {
 
 };
 
-//rendering function with nested for loops that creates and populates table
+//rendering function with nested for loops that populates table
 Store.prototype.render = function () {
     this.avgSalesPerHour();
     this.totalSalesPerDay();
@@ -69,10 +74,11 @@ Store.prototype.render = function () {
    // }
     //storeTable.appendChild(cityTable);
 };
-//     //total cookiesPerDay for each location that goes at the end of each row
+
+//total cookiesPerDay for each location that goes at the end of each row
 
 
-//total cookiesOverall for each hour that goes at the bottom of each column
+//Footer: total cookiesOverall for each hour that goes at the bottom of each column
 
 
 
@@ -85,7 +91,7 @@ var paris = new Store('Paris', 20, 38, 2.3);
 var lima = new Store('Lima', 2, 16, 4.6);
 var citiesArray = [seattle, tokyo, dubai, paris, lima];
 
-//crate header
+//create header
 function createHeader() {
     var headerRow = document.createElement('tr')
 
