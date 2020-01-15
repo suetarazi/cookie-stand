@@ -80,7 +80,19 @@ Store.prototype.render = function () {
 
 //Footer: total cookiesOverall for each hour that goes at the bottom of each column
 
+function createFooter(){
+    var footerRow = document.createElement('tfoot');
+    for(var i=0; i<hours[i]; i++){
+        var hourlyTotal=0;
+        
+        for(var j=0; j<citiesArray[j]; j++){
+            hourlyTotal += citiesArray[j];
+        tableFooter.textContent=hourlyTotal; 
+        }
+    }
 
+
+}
 
 
 //instantiations for each store location
