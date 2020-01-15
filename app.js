@@ -17,6 +17,7 @@ function Store(location, minCust, maxCust, avgCookiesPerSale) {
     this.avgCookiesPerSale = avgCookiesPerSale;
     this.sum = 0;
     this.cookiesPerHour = [];
+    this.cookiesTotal = 0;
 }
 Store.prototype.avgSalesPerHour = function () {
 
