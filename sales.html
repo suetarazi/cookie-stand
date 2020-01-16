@@ -12,21 +12,27 @@
             <h2>Salmon Cookies Global Sales</h2>
             <div>
                 <table id="storeTable"></table>
+                <br><br><br>
             </div>
-            <div id="seattleData"></div>
-            <div id="tokyoData"></div>
-            <div id="dubaiData"></div>
-            <div id="parisData"></div>
-            <div id="limaData"></div>
-            
-            <!-- <table id="inputData", width="80%">
-                <tr>
-                    <th>Location</th>
-                    <th>Min Cust</th>
-                    <th>Max Cust</th>
-                    <th>Avg Cookie/Sale</th> 
-                </tr>
-            </table> -->
+        <div>
+            <h2>Add A New Location</h2>
+            <form id="addLocation">
+                <fieldset>
+                    <legend>Location Information</legend>
+                    <label>Location Name</label>
+                    <input name="location" type="text">
+                    <label>Minimum Customers</label>
+                    <input name="minCust" type="text">
+                    <label>Maximum Customers</label>
+                    <input name="maxCust" type="text">
+                    <label>Average Cookies per Sale</label>
+                    <input name="avgCookiesPerSale" type="text">
+                </fieldset>
+                <br>
+                <button type="submit">Add New Location</button>
+            </form>
+        </div>
+
         </div> 
         <script src="app.js"></script>
     </body>
