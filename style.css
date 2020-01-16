@@ -4,9 +4,14 @@
 body{
     background-color: #D9B97E;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
     /* color: #B4B4B4; */
 }
 
+div{
+    width: 100%;
+
+}
 h1{
     color: #A64732;
     text-align: center;
@@ -15,12 +20,13 @@ h1{
     margin: 0;
 }
 
-h4{
+#contactInfo{
+    margin-top: 15px;
     color: #403A2F;
     text-align: center;
-    font-size: 16pt;
+    font-size: 14pt;
 }
-.salmon{
+.salmonHero{
     display: block;
     /* text-align: center; */
     width: 500px;
@@ -44,4 +50,52 @@ li{
     color: #424242;
     font-size: 20 px;
 }        
+
+#family{
+    margin-top: 100px;
+    height: 300px;
+    margin-left: 50px;
+    float: left;
+}
+
+#mainContent{
+    width: 45%;
+    margin: 30px;
+    float: right;
+}
+
+#addresses{
+    margin: 30px;
+    clear: both;
+}
+#cutter{
+    height: 200px;
+    margin: 15px;
     
+}
+#frosted{
+    height: 200px;
+    margin: 15px;
+    /* float: right; */
+}
+
+#tshirt{
+    width: 200px;
+    margin: 30px;
+    /* float: right; */
+
+}
+.itemWeShip{
+    font-size: 12pt;
+    /* float: right; */
+    /* width: 90%;
+    margin 30px;
+    float: right; */
+
+}
+
+#footer{
+    margin: 0 auto; 
+    height: 40px;
+     
+}
