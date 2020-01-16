@@ -24,14 +24,14 @@ function Store(location, minCust, maxCust, avgCookiesPerSale) {
 function getRandomArbitrary(minCust, maxCust) {
     return Math.floor(Math.random() * (maxCust - minCust) + minCust);
 }
-console.log(getRandomArbitrary(1, 5));
+
 
 //utility function to sum array of cookies per hour for ONE location
 Store.prototype.totalSalesPerDay = function () {
     for (var i = 0; i < this.cookiesPerHour.length; i++) {
         this.sum += this.cookiesPerHour[i];
     }
-    console.log('how do you do?');
+ 
     return this.sum;
     
 };
@@ -40,10 +40,7 @@ Store.prototype.totalSalesPerDay = function () {
 Store.prototype.avgSalesPerHour = function () {
 
     for (var i = 0; i < hours.length; i++) {
-
-        console.log('hello');
         var avg = getRandomArbitrary(this.minCust, this.maxCust);
-        console.log(avg);
         this.cookiesPerHour.push(Math.floor(avg * this.avgCookiesPerSale));
     }
     return this.cookiesPerHour;
@@ -108,13 +105,14 @@ function createFooter(){
     
     var hourlyTotal=0;
     var grandTotal=0;
-    for(var i=0; i<hours[i]; i++){
+    for(var i=0; i<hours.length; i++){
         hourlyTotal=0;
-        
+        console.log("cities array length", citiesArray.length)
         for(var j=0; j<citiesArray.length; j++){
+            console.log("j", j)
             hourlyTotal += citiesArray[j].cookiesPerHour[i];
             grandTotal += citiesArray[j].cookiesPerHour[i];
-        } console.log(hourlyTotal);
+        } 
 
         var footerSums=document.createElement('th');
         footerSums.textContent=hourlyTotal;
@@ -126,21 +124,22 @@ function createFooter(){
     
     storeTable.appendChild(footerRow);
     
-    console.log(grandTotal);
+    
    //return hourlyTotal;
 }
-createFooter();
 
 //instantiations for each store location
 var seattle = new Store('Seattle', 23, 65, 6.3);
-var tokyo = new Store('Tokyo', 3, 24, 1.2);
+var tokyo = new Store('Tokyo', 3, 24, 1.2)
 var dubai = new Store('Dubai', 11, 38, 3.7);
 var paris = new Store('Paris', 20, 38, 2.3);
 var lima = new Store('Lima', 2, 16, 4.6);
 
 //render function: 
 for(var i=0; i<citiesArray.length; i++){
+    console.log(citiesArray);
     citiesArray[i].render();
 }
-console.log(citiesArray);
 
+
+createFooter();
