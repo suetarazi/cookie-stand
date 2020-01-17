@@ -161,7 +161,7 @@ function handleSubmit(event){
 
     //clear table
 //    storeTable.innerHTML = '';
-
+    //citiesArray.push(addLocation); per Jacob - need to add new location info to citiesArray, then build table.
     newStore.render();
    // addLocation.reset();
 
@@ -169,3 +169,16 @@ function handleSubmit(event){
 
 
 createFooter();
+
+
+//----------------Executable Code------------------------//
+//function render(){
+//    tableBody.innerHTML=null; - wipes out table data to reset the table, then calls below will rebuild it
+    //renderHeader();
+    //for (var i=0; i<citiesArray.length; i++){
+        //citiesArray[i].body();
+        //citiesArray[i].store.render(); ?is this how I would call a prototype function?
+    //}
+    //renderFooter();
+//}
+//render();
