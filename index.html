@@ -6,11 +6,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-        <h1>Salmon Cookies</h1>
-        <img class="salmonHero", src="https://raw.githubusercontent.com/codefellows/seattle-201d58/fef284508de688d1e1250f3b76d0a6521ce1836a/class-06/assets/salmon.png">
+        <h1>SALMON COOKIES</h1>
+        <img class="salmonHero", src="./assets/salmon.png">
         
         <div>
             <article id="contactInfo">
@@ -23,9 +25,10 @@
     </header>
     <main>
         <section>
-        <div>
-            <img id="family", src="https://raw.githubusercontent.com/codefellows/seattle-201d58/master/class-08/assets/family.jpg"/>
-            <article id="mainContent">
+        <div id="familyAbout">
+            <img id="family", src="./assets/family.jpg"/>
+            <div id="mainContent">
+                <h3>About Us</h3>
                 <p>
                     Salmon Cookies are a delicious, high protein treat! We are a family of fisherman who have enjoyed salmon fishing for years. We have perfected the perfect salmon cookie based on our grandmother's recipe. Years ago, she used to bake a batch of these and send them off with us on our fishing expeditions.<br><br>
                     We have improved upon her recipe by adding chocolate chips and making them dairy-free. They are full of protein (18 grams per cookie) and are rich in Omega-3 acids that are good for your brain. <br><br>
@@ -34,38 +37,39 @@
                     We also do catering for special events and can ship to your location, so call for more information. 
                     
                 </p>
-            </article>
+            </div>
         </div>
         </section>
     <section id="addresses">
         <div>
-            <p>
-                United States: <br>
+            <ul id="addressList">
+                <li>OUR LOCATIONS</li> <br><br>
+               <li> United States: <br>
+                Salmon Cookies Flagship<br>
                 123 NW Market St.<br>
-                Seattle, WA 98107<br><br>
+                Seattle, WA 98107<br><br></li>
 
-                Tokyo:<br>
+                <li>Tokyo:<br>
                 1-2-3 Higashi Shimbashi<br>
                 Minato Ku Tokyo<br>
-                105-7123<br>
-                Japan<br><br>
+                105-7123 Japan<br><br></li>
 
-                Dubai:<br>
+                <li>Dubai:<br>
                 404 Al Mina Rd.<br>
                 Bur Dubai<br>
-                United Arab Emirates<br><br>
+                United Arab Emirates<br><br></li>
 
-                Paris:<br>
+                <li>Paris:<br>
                 111 Boulevard Saint-Germain<br>
                 75006 Paris<br>
-                France<br><br>
+                France<br><br></li>
 
-                Lima:<br>
+                <li>Lima:<br>
                 Ca Peru 785<br>
                 23578<br>
-                Lima<br><br>
+                Lima<br><br></li>
                 
-            </p>            
+            </ul>            
         </div> 
     </section>
 
@@ -74,22 +78,30 @@
 
     <section class="itemsWeShip">
         <div>
-            <p>
-                <h4>Items We Ship</h4>
-                <img id="cutter", src="https://raw.githubusercontent.com/codefellows/seattle-201d58/master/class-08/assets/cutter.jpeg"/>
-                <figcaption>Cookie Cutter $5 U.S.</figcaption>
-                <img id="frosted", src="https://raw.githubusercontent.com/codefellows/seattle-201d58/master/class-08/assets/frosted-cookie.jpg"/>
-                <figcaption>Custom Frosted Cookies $3 U.S. each</figcaption> 
-                <img id="tshirt", src="https://raw.githubusercontent.com/codefellows/seattle-201d58/master/class-08/assets/shirt.jpg"/>    
-                <figcaption>T-shirt $15 U.S.</figcaption>
-                <img id="chinookPoster", src="https://raw.githubusercontent.com/codefellows/seattle-201d58/master/class-08/assets/chinook.jpg"/>
-                <figcaption>Salmon Poster $12 U.S.</figcaption>    
-            </p>
+            <ul id="storeItems">
+                <li><h4>OUR ONLINE STORE</h4><br>
+                The following items can be shipped to you! <br><br>
+                Domestic: 3-5 buisness days   International: please allow up to 2 weeks<br><br>
+                Please call us to place your order</li>
+                <li><img id="cutter", src="./assets/cutter.jpeg"/>
+                <figcaption>Cookie Cutter $5 U.S.</figcaption></li>
+                <li><img id="frosted", src="./assets/frosted-cookie.jpg"/>
+                <figcaption>Custom Frosted Cookies $3 U.S. each</figcaption></li> 
+                <li><img id="tshirt", src="./assets/shirt.jpg"/>    
+                <figcaption>T-shirt $15 U.S.</figcaption></li>
+                <li><img id="chinookPoster", src="./assets/chinook.jpg"/>
+                <figcaption>Salmon Poster $12 U.S.</figcaption></li>    
+            </ul>
         </div>
     </section>
-</main>        
+</main>       
+<br>
+<br>
+<br>
+<linebreak id="linebreak"></linebreak> 
 <footer id="footer">
-    <img src="https://raw.githubusercontent.com/codefellows/seattle-201d58/master/class-08/assets/fish.jp"/>
+    <img id="footerImage" src="./assets/fish.jpg"/>
+    Copyright 2020 Salmon Cookies, Inc.
 </footer>
 <!-- <script src="" async defer></script> -->
 </body>
